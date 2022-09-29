@@ -12,6 +12,25 @@
          }
 
          </style>
+         <script type="text/javascript">
+     
+         function checkPrime() {
+             
+         var n, i, flag = true;
+         n = document.myform.n.value;
+         n = parseInt(n)
+            for (i = 2; i <= n - 1; i++)
+                if (n % i == 0) {
+                    flag = false;
+                    break;
+                }
+                 
+            if (flag == true)
+                console.log(n + " is prime");
+            else
+                console.log(n + " is not prime");
+        }
+    </script>
       </head>
       <body>
          <body style="background-color:#f2ebe9;">
@@ -51,6 +70,15 @@
          <li>A political structure study via poset topology</li>
          <li>Distance-based topological indices and energy</li>
          </ul>
+         
+        <h4>Let's check the is prime or not!</h4>
+     
+        <form name="myform">
+            Enter any number:
+            <input type="text" name=n value="">
+            <input type="button" value="Check" onClick="checkPrime()">
+            <br>
+        </form>
           
          
          <img src="poset.png" scale="0.9" alt="Poset">
