@@ -1,14 +1,65 @@
 <!DOCTYPE html>
 <html>
-<body>
-
-<?php
-function writeMsg() {
-  echo "Hello world!";
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-writeMsg();
-?>
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>HTML Table</h2>
+
+<table>
+  <tr>
+    <th>ALAN</th>
+    <th>KONU</th>
+    <th>TU</th>
+  </tr>
+  <tr>
+    <td>Ayrık Matematik</td>
+    <td>Graf Teorisi</td>
+    <td>Teori, uygulama</td>
+  </tr>
+  <tr>
+    <td>Ayrık Matematik</td>
+    <td>Permütasyonlar/td>
+    <td>Teori</td>
+  </tr>
+  <tr>
+    <td>Genel Matematik</td>
+    <td>İntegral</td>
+    <td>Teori, uygulama</td>
+  </tr>
+  <tr>
+    <td>Bilgisayar</td>
+    <td>Algoritmalar</td>
+    <td>Teori, uygulama</td>
+  </tr>
+  <tr>
+    <td>Bilgisayar</td>
+    <td>PHP kodlama</td>
+    <td>Uygulama</td>
+  </tr>
+  <tr>
+    <td>Bilgisayar</td>
+    <td>Veri yapıları</td>
+    <td>Teori</td>
+  </tr>
+</table>
 
 </body>
 </html>
